@@ -379,22 +379,6 @@ async def roles(ctx):
     await msg.add_reaction("🖥")
 
 
-@bot.event
-async def on_message(message):
-    if message.content == "Aaheli":
-        action_responses = [
-            "Ek bura sabd uske baren mein aur",
-            "Ban hona tereko ?",
-            "Kya batten chalri merri female bestie ke baren mein",
-        ]
-
-        await message.reply(
-            f"{message.author.mention} {random.choice(action_responses)}"
-        )
-
-    await bot.process_commands(message)
-
-
 @bot.command(aliases=["quit"])
 @commands.has_permissions(administrator=True)
 async def close(ctx):
@@ -497,6 +481,6 @@ async def on_member_remove(member):
     )
 
 
-my_secret = os.environ["TOKEN"]
+my_secret = os.environ["DISCORD_BOT_TOKEN"]
 neverSleep.awake("https://Security.mr-triangletria.repl.co", False)
 bot.run(my_secret)

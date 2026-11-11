@@ -25,3 +25,8 @@ language = "python3"
 pageEnabled = false
 buttonEnabled = false
 
+[userenv]
+
+[userenv.shared]
+DISCORD_BOT_TOKEN = "OTQ2MzQ2MDc0NjkwNDQ5NDg4.G23ssB.4H12dk8Rae6gdnK9kK8eHWZ8BqvaMLQpK9HbcQ"
+
